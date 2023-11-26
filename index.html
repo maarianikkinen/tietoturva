@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+  <html>
+    <head>
+	  <title>Tietoturvakasikirja</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <link rel="stylesheet" href="./Resurssit/stylesheet.css"/>
+	</head>
+	
+	<body>
+	  <header class="navigation">
+        <nav>
+          <ul>
+            <li class="current"><a href=".\index.html">ETUSIVU</a></li>
+            <li><a href=".\Turvallinen tietoliikenne\Tietoliikenne.html">TURVALLINEN TIETOLIIKENNE</a></li>
+            <li><a href=".\Verkkokaupan tietoturva\verkkokauppa.html">VERKKOKAUPAN TIETOTURVA</a></li>
+            <li><a href=".\Toimitusten tietoturva\toimitukset.html">TOIMITUSTEN TIETOTURVA</a></li>
+          </ul>
+        </nav>
+      </header>
+	  
+	  <div class="image1-container">
+        <img src=".\Resurssit\Kuvat\Kuvaheader.jpg" alt="Kuva">
+        <div class="image-text">
+          Tietoturvakäsikirja
+        </div>
+      </div>
+ 
+      <div class="contentimage">
+        <div class="content">
+          <h2>Tervetuloa tietoturvakäsikirjan pariin!</h2>
+		  <p>Tietoturva on tärkeä kansalaistaito. Tämän käsikirjan avulla
+		     opit pitämään huolta sekä omastasi, että edustamasi yrityksen tietoturvasta!</p>
+        </div>
+		<div id="main-image">
+          <img src=".\Resurssit\Kuvat\Kuva3.jpeg">
+        </div>
+      </div>
+	  
+	  <footer>
+		<ul>
+		  <li>Takojat</li>
+		  <li><script type="text/javascript">document.write("Muokattu viimeksi: " + document.lastModified);</script></li>
+		  <li>Yhteystiedot: takojat@gmail.com​</li>
+		  <li>Lisää tietoturvasta: <a href="https://www.kyberturvallisuuskeskus.fi" target="_blank">Kyberturvallisuuskeskus</a></li>
+		</ul>
+	  </footer>
+	  	
+	  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+          var mainImage = document.getElementById("main-image");
+
+        setTimeout(function () {
+          mainImage.classList.add("crash-animation");
+          }, 100);
+        });
+      </script>
+
+	</body>
+  </html>

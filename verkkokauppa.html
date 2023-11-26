@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+  <html>
+    <head>
+	  <title>Verkkokauppa</title>
+	  <meta viewport="width=device-width, initial-scale=1.0"/>
+	  <link rel="stylesheet" href="../Resurssit/stylesheet.css"/>
+	</head>
+	
+	<body>
+	  <header class="navigation">
+        <nav>
+          <ul>
+            <li><a href="..\index.html">ETUSIVU</a></li>
+            <li><a href="..\Turvallinen tietoliikenne\Tietoliikenne.html">TURVALLINEN TIETOLIIKENNE</a></li>
+            <li class="current"><a href=".\verkkokauppa.html">VERKKOKAUPAN TIETOTURVA</a></li>
+            <li><a href="..\Toimitusten tietoturva\toimitukset.html">TOIMITUSTEN TIETOTURVA</a></li>
+          </ul>
+        </nav>
+      </header>
+	  
+      <header class="otsikko">
+	    <h2>Verkkokaupan tietoturva</h2>
+	  </header>
+
+	  <div class="contentimage">
+        <div class="content">
+          <p>Pienenkin verkkokaupan verkkokauppias on vastuussa henkilötietojen turvallisesta käsittelystä, 
+		     niin että tietoturvaan liittyvät riskit ja tahattomat tietosuojaloukkaukset ovat ehkäistävissä.</p>
+        </div>
+		<div class="image">
+          <img src="..\Resurssit\Kuvat\Kuva1.jpg">
+        </div>
+      </div>
+	  
+	  <div class="lista">
+	    <p>Verkkokaupan ostotapahtumissa liikkuu asiakkaan henkilötietoja sekä pankki- ja luottokorttitietoja. 
+	       Henkilötietoja on käsiteltävä Euroopan parlamentin yleisen tietosuoja-asetuksen ja tietosuojalain mukaisesti. 
+		   Yleinen tietosuoja-asetus määrittelee henkilötiedot seuraavasti: ”kaikkia tunnistettuun tai tunnistettavissa olevaan 
+		   luonnolliseen henkilöön, jäljempänä ’rekisteröity’, liittyviä tietoja; tunnistettavissa olevana pidetään luonnollista henkilöä, 
+		   joka voidaan suoraan tai epäsuorasti tunnistaa erityisesti tunnistetietojen, kuten nimen, henkilötunnuksen, sijaintitiedon, 
+		   verkkotunnistetietojen taikka yhden tai useamman hänelle tunnusomaisen fyysisen, fysiologisen, geneettisen, psyykkisen, 
+		   taloudellisen, kulttuurillisen tai sosiaalisen tekijän perusteella”. </p>
+	    <p>Tietosuoja-asetuksen mukaan henkilötietoja kerättäessä rekisteröidyllä tulee olla mahdollisuus tietää antamiensa tietojen 
+	       tulevasta käsittelystä ja käytöstä. Kaikkiin verkkopalveluihin, joissa kerätään henkilötietoja, on liitettävä rekisteriseloste, 
+	       joka on käyttäjien nähtävissä verkkokaupan sivuilla. Rekisteriselosteessa tulee olla seuraavat tiedot: rekisterinpitäjän yhteystiedot, 
+	       henkilötietojen käsittelyn tarkoitus, kuvaus rekisteröityjen ryhmistä ja näihin liittyvistä tiedoista, tietojen luovutus sekä kuvaus 
+	       rekisterin suojauksen periaatteista. </p>
+	    <p>Jos verkkokaupan tietoturva on uhattuna, verkkokauppiaan pitää tiedottaa asiakkaita käytettävissä olevista toimenpiteistä, 
+	       joilla uhkaa voi torjua, sekä asiakkaille toimenpiteistä aiheutuvista kustannuksista. Lisäksi asiakkaalle pitää kertoa, 
+	       mistä hän voi saada lisätietoja asiasta. Verkkokaupan on säilytettävä tiedot ilmoituksista. Esimerkiksi, jos verkkokaupan 
+	       ohjelmistosta löytyy haavoittuvuus, tulee kauppiaan tiedottaa asiakkaitaan havaitusta uhasta ja sen vaikutuksista sekä keinoista, 
+	       joilla asiakas voi itse suojautua haavoittuvuutta vastaan. Tällaisia keinoja on esimerkiksi tietyn maksutavan välttäminen tai 
+	       tilausten siirtäminen myöhempään ajankohtaan. Verkkokauppiaan tulee korjata haavoittuvuus mahdollisimman pian sen löytymisen jälkeen. </p>
+	    <p><strong>Paras tapa suojata verkkokauppa tietoturvauhilta on varmistaa, että verkkokaupassa on asennettuna viimeisimmät tietoturvapäivitykset 
+		   ja verkkokaupan kriittinen sisältö on varmuuskopioitu säännöllisesti.</strong></p>
+	  </div>
+	  
+	  <a href="#top" id="scroll-to-top">&#8593;</a>
+	  
+	  <footer>
+		<ul>
+		  <li>Takojat</li>
+		  <li><script type="text/javascript">document.write("Muokattu viimeksi: " + document.lastModified);</script></li>
+		  <li>Yhteystiedot: takojat@gmail.com​</li>
+		  <li>Lisää tietoturvasta: <a href="https://www.kyberturvallisuuskeskus.fi" target="_blank">Kyberturvallisuuskeskus</a></li>
+		</ul>
+	  </footer>
+	  	
+	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $("#scroll-to-top").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+          });
+      });
+      </script>
+      <script>
+        window.addEventListener("scroll", function() {
+            var button = document.getElementById("scroll-to-top");
+            if (window.scrollY > 0) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        });
+      </script>
+	  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+          var imageElements = document.querySelectorAll(".image");
+
+        imageElements.forEach(function (element) {
+          element.classList.add("crash-animation");
+        });
+      });
+      </script>
+	</body>
+  </html>

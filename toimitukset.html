@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+  <html>
+    <head>
+	  <title>Toimitukset</title>
+	  <meta viewport="width=device-width, initial-scale=1.0"/>
+	  <link rel="stylesheet" href="../Resurssit/stylesheet.css"/>
+	</head>
+	
+	<body>
+	  <header class="navigation">
+        <nav>
+          <ul>
+            <li><a href="..\index.html">ETUSIVU</a></li>
+            <li><a href="..\Turvallinen tietoliikenne\Tietoliikenne.html">TURVALLINEN TIETOLIIKENNE</a></li>
+            <li><a href="..\Verkkokaupan tietoturva\verkkokauppa.html">VERKKOKAUPAN TIETOTURVA</a></li>
+            <li class="current"><a href=".\toimitukset.html">TOIMITUSTEN TIETOTURVA</a></li>
+          </ul>
+        </nav>
+      </header>
+	  
+      <header class="otsikko">
+	    <h2>Toimitusten tietoturva</h2>
+	  </header>
+
+	  <div class="contentimage">
+        <div class="content">
+          <p>Tuotteiden toimitusten tietoturva on tärkeä osa liiketoimintaa, erityisesti verkkokaupassa.<br/> 
+		     <strong>Nämä viisi kohtaa takaavat turvallisen toimituksen yrityksessä:</strong></p>
+        </div>
+		<div class="image">
+          <img src="..\Resurssit\Kuvat\Kuva2.jpg">
+        </div>
+      </div>
+	  
+	  <div class="lista">
+	    <ol>
+		  <li>Tietoliikenteen salaus:</li>
+		    <ul class="lista2">
+		      <li>Käytä vahvaa salausta kaikessa tietoliikenteessä, erityisesti verkkokaupan kautta. 
+			      Tämä suojaa asiakkaiden henkilötiedot ja maksutapahtumat mahdollisilta hyökkäyksiltä.</li>
+		    </ul>
+		  <li>Toimitusjäljitettävyys:</li>
+		    <ul class="lista2">
+		      <li>Käytä järjestelmää, joka mahdollistaa toimitusten seuraamisen reaaliajassa. 
+			      Asiakkailla tulisi olla mahdollisuus nähdä, missä vaiheessa heidän tilauksensa etenee.</li>
+		    </ul>
+		  <li>Reaaliaikainen hälytysjärjestelmä:</li>
+		    <ul class="lista2">
+		      <li>Käytä hälytysjärjestelmää, joka hälyttää mahdollisista poikkeamista toimituksissa. 
+			      Nopea reagointi mahdollisiin ongelmiin auttaa minimoimaan vahinkoja ja ylläpitämään asiakastyytyväisyyttä.</li>
+		    </ul>
+		  <li>Fyysinen tietoturva varastossa ja kuljetuksessa:</li>
+		    <ul class="lista2">
+		      <li>Kiinnitä huomiota fyysiseen tietoturvaan varastossa ja kuljetuksessa. Rajoita pääsy varastoon, 
+			      käytä turvakameroita ja varmista, että tuotteet ovat turvallisesti suojattuina kuljetuksen aikana.</li>
+		    </ul>
+		  <li>Palautusten turvallinen käsittely:</li>
+		    <ul class="lista2">
+		      <li>Turvaa myös palautusten käsittely tietoturvariskeiltä. Varmista, että palautetut tuotteet 
+			      tarkastetaan huolellisesti ennen niiden palauttamista varastoon, 
+			      ja että asiakkaan palauttamat tiedot käsitellään luottamuksellisesti.</li>
+		    </ul>
+	    </ol>
+		<p><strong>Nämä toimenpiteet suojaavat yrityksen ja asiakkaiden tietoja, sekä myös vahvistavat asiakkaiden luottamusta 
+		   ja turvallisuuden tunnetta koko toimitusprosessin aikana.</strong></p>
+	  </div>
+	  
+	  <a href="#top" id="scroll-to-top">&#8593;</a>
+	  
+	  <footer>
+		<ul>
+		  <li>Takojat</li>
+		  <li><script type="text/javascript">document.write("Muokattu viimeksi: " + document.lastModified);</script></li>
+		  <li>Yhteystiedot: takojat@gmail.com​</li>
+		  <li>Lisää tietoturvasta: <a href="https://www.kyberturvallisuuskeskus.fi" target="_blank">Kyberturvallisuuskeskus</a>​</li>
+		</ul>
+	  </footer>
+	  	
+	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $("#scroll-to-top").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+          });
+      });
+      </script>
+      <script>
+        window.addEventListener("scroll", function() {
+            var button = document.getElementById("scroll-to-top");
+            if (window.scrollY > 0) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        });
+      </script>
+	  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+          var imageElements = document.querySelectorAll(".image");
+
+        imageElements.forEach(function (element) {
+          element.classList.add("crash-animation");
+        });
+      });
+      </script>
+	</body>
+  </html>
